@@ -81,7 +81,15 @@
 /* ABOUT SECTION */
 
 .about img {
-  text-align: center;
+  max-width: 600px !important;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 750px) {
+  .about img {
+    width: 400px;
+  }
 }
 
 .abouttitle {
@@ -106,6 +114,7 @@
   max-width: 150px;
   border-top: 4px solid crimson;
   border-radius: 5px;
+  opacity: 1;
 }
 
 /* FOOTER SECTION */
