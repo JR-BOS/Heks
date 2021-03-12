@@ -53,7 +53,7 @@
   top: 50%;
   left: 50%;
   font-size: 25px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   color: white;
   z-index: 3;
   font-family: "Dancing Script", cursive;
@@ -62,9 +62,9 @@
 .headline2 {
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 50% !important;
   font-size: 45px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   color: white;
   z-index: 3;
   font-family: "Dancing Script", cursive;
@@ -72,9 +72,9 @@
 
 .homebutton {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
   z-index: 3;
   margin-top: 60px;
 }
