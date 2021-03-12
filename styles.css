@@ -50,8 +50,8 @@
 
 .headline {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50% !important;
+  left: 50% !important;
   font-size: 25px;
   transform: translate(-50%, -50%) !important;
   color: white;
@@ -61,7 +61,7 @@
 
 .headline2 {
   position: absolute;
-  top: 40%;
+  top: 40% !important;
   left: 50% !important;
   font-size: 45px;
   transform: translate(-50%, -50%) !important;
@@ -89,7 +89,7 @@
 
 @media (max-width: 750px) {
   .about img {
-    width: 345px;
+    width: 330px;
   }
 }
 
@@ -226,12 +226,12 @@
   font-size: 29px !important;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
   .headline2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .headline {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
