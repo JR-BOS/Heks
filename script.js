@@ -1,6 +1,11 @@
 $(document).ready(function () {
-  $(".navbar-nav>li>a").on("click", function () {
-    $(".navbar-collapse").collapse("hide");
+  const navLinks = document.querySelectorAll(".nav-item");
+  const menuToggle = document.getElementById("navbarNav");
+  const bsCollapse = new bootstrap.Collapse(menuToggle);
+  navLinks.forEach((l) => {
+    l.addEventListener("click", () => {
+      bsCollapse.toggle();
+    });
   });
 
   const home_content = document.querySelector(".home-content");
