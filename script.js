@@ -1,13 +1,7 @@
 $(document).ready(function () {
-  const navLinks = document.querySelectorAll(".nav-item");
-  const menuToggle = document.getElementById("navbarNav");
-  const bsCollapse = new bootstrap.Collapse(menuToggle);
-  navLinks.forEach((l) => {
-    l.addEventListener("click", () => {
-      bsCollapse.toggle();
-    });
+  $(".navbar-nav>li>a").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
   });
-
   const home_content = document.querySelector(".home-content");
   const menu = document.querySelector(".navbarcontent");
 
