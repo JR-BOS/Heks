@@ -27,7 +27,7 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 35px;
 }
 
 .home-content {
@@ -152,6 +152,30 @@
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.contact p {
+  text-align: justify;
+}
+
+.contact .icons {
+  margin: 10px 0;
+}
+
+.contact .contactrow {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contactrow .info {
+  margin-left: 40px;
+}
+
+.contact .contactrow i {
+  font-size: 25px;
+  color: crimson;
+  width: 25px;
 }
 /* FOOTER SECTION */
 
