@@ -128,10 +128,24 @@ Voor meer informatie over onze Party Service verwijzen wij u door naar onze webs
       <div class="container">
         <h1 class="abouttitle">Menukaart</h1>
         <hr class="rounded" />
-        <h1 class="aboutundertitle">Menukaart ondertitel</h1>
+        <h1 class="aboutundertitle">Plates & Snacks, Dranken, Lunch</h1>
         <div class="row">
-          <div class="col-sm"></div>
-          <div class="col-sm"></div>
+          <div class="col-sm">
+            <!-- Button trigger modal -->
+              <button
+              type="button"
+              class="btn btn-danger menubutton"
+              data-mdb-ripple-color="dark"
+              data-mdb-toggle="modal"
+              data-mdb-target="#exampleModal"
+              >
+                Bekijk onze menukaart!
+              </button>
+
+
+          </div>
+            
+          
         </div>
       </div>
     </section>
@@ -149,7 +163,7 @@ Voor meer informatie over onze Party Service verwijzen wij u door naar onze webs
       </div>
     </section>
 
-        <!-- EVENEMENTEN SECTION  -->
+        <!-- PARTYSERVICE SECTION  -->
 
         <section id="partyservice" class="partyservice">
           <div class="container">
@@ -258,6 +272,117 @@ Voor meer informatie over onze Party Service verwijzen wij u door naar onze webs
         </div>
       </footer>
     </div>
+
+<!-- Modal -->
+<div
+class="modal fade "
+id="exampleModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Klik rechts/links van het menu voor het vervolg van de menukaart</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-mdb-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-mdb-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleIndicators"
+            data-mdb-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleIndicators"
+            data-mdb-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleIndicators"
+            data-mdb-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+          type="button"
+          data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/menu1.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/menu2.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/menu3.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/menu4.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+  </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-mdb-dismiss="modal">
+        Sluiten
+      </button>
+  
+    </div>
+  </div>
+</div>
+</div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

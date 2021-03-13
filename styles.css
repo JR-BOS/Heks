@@ -68,7 +68,6 @@ footer {
   height: 100vh;
   justify-content: center;
   align-items: center;
-
   background: white;
 }
 
@@ -220,6 +219,12 @@ footer {
   font-size: 25px;
   color: crimson;
   width: 25px;
+}
+
+/* MENUKAART SECTION */
+
+.menukaart {
+  text-align: center;
 }
 /* FOOTER SECTION */
 
