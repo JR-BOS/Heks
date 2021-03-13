@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $(".navbar-nav>li>a").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
   const home_content = document.querySelector(".home-content");
   const menu = document.querySelector(".navbarcontent");
 
@@ -25,8 +29,4 @@ $(document).ready(function () {
       { opacity: 1, x: 0 },
       "-=0.7"
     );
-
-  $(".navbar-collapse a").click(function () {
-    $(".navbar-collapse").collapse("hide");
-  });
 });

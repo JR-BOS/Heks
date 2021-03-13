@@ -22,6 +22,10 @@ html {
   color: #111;
 }
 
+/* .navbar-toggler-icon {
+  color: black !important;
+} */
+
 .home {
   display: flex;
   height: 100vh;
