@@ -59,10 +59,6 @@ footer {
   color: #111;
 }
 
-/* .navbar-toggler-icon {
-  color: black !important;
-} */
-
 .home {
   display: flex;
   height: 100vh;
@@ -221,11 +217,22 @@ footer {
   width: 25px;
 }
 
+.contact .head {
+  font-weight: bold;
+}
+
 /* MENUKAART SECTION */
 
 .menukaart {
   text-align: center;
 }
+
+/* EVENEMENTEN SECTION  */
+.evenementen .img-fluid {
+  height: 270px !important;
+  width: 100%;
+}
+
 /* FOOTER SECTION */
 
 .footer-dark {
