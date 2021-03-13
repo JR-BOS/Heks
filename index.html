@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     />
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
 
     <title>Café de Heksenketel</title>
   </head>
@@ -46,7 +50,7 @@
             </li>
 
 <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
     De Heks
   </a>
   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,6 +58,7 @@
     <li><a class="dropdown-item" href="#geschiedenis">Geschiedenis</a></li>
   </ul>
 </li>
+       
             <li class="nav-item">
               <a class="nav-link" href="#menukaart">Menukaart</a>
             </li>
@@ -85,7 +90,7 @@
         <img src="images/heks3.jpeg" />
         <h1 class="headline2">De Heksenketel</h1>
         <h1 class="headline">geniet, maar nooit met mate</h1>
-        <a href="#about" class="btn btn-light homebutton">Wie zijn wij</a>
+        <a href="#about" class="homebutton"><i class="far fa-arrow-alt-circle-down"></i></a>
       </div>
     </section>
 
@@ -95,30 +100,18 @@
       <div class="container">
         <h1 class="abouttitle">Café de Heksenketel</h1>
         <hr class="rounded" />
-        <h1 class="aboutundertitle">Dorpse gezelligheid</h1>
+        <h1 class="aboutundertitle">Leukste kroeg van Beekbergen!</h1>
         <div class="row">
           <div class="col-sm"><img src="images/heks1.jpeg" /></div>
           <div class="col-sm">
             <p class="textcontent">
-              Lorem ipsums, dolor sit amet consectetur adipisicing elit.
-              Blanditiis fuga earum voluptatem necessitatibus ducimus aut, est
-              ut perferendis, temporibus adipisci totam asperiores excepturi?
-              Ipsam unde maxime dolores sunt nulla laudantium! Dicta, non beatae
-              nemo, vero a quo ut molestiae aperiam deleniti doloribus
-              repudiandae cum distinctio inventore! Ea enim doloribus, delectus
-              deleniti temporibus modi dignissimos aperiam quod quasi dolore
-              mollitia sed. Neque, at quidem. Esse, repudiandae. Ducimus dolorem
-              vel ipsa eius, beatae culpa explicabo quo tenetur rem asperiores
-              ad iste natus enim soluta reprehenderit doloremque voluptate
-              quibusdam, mollitia omnis error? Eos. Libero, quisquam. Eum
-              officia, deserunt quibusdam autem, eaque corrupti esse minus quasi
-              odio excepturi suscipit dolorem error libero consequatur itaque
-              similique veritatis nulla repudiandae? Delectus ipsam mollitia
-              veritatis quae facilis? Quis ea atque et recusandae, maxime
-              officiis. Amet dolorem impedit, repellat accusantium sapiente
-              numquam, eum officia cupiditate voluptatibus nobis quas incidunt
-              pariatur quaerat laborum dolorum itaque at necessitatibus, tempore
-              modi.
+              Welkom op de website van Café de Heksenketel!<br><br>
+              De Heksenketel is een café middenin de Dorpstraat in Beekbergen.
+Het café is alle dagen van het jaar geopend van 's morgens 11 t/m 1 uur 's nachts en in het weekend t/m 2 uur 's nachts.
+Wij hebben een groot terras aan de kant van de Dorpstraat en in de directe omgeving is een fraaie parkeerplaats. Er wordt dan ook vaak een tussenstop gemaakt door de vele toeristen, die Beekbergen per fiets of per auto bezoeken.
+De Heksenketel heeft een kleine kaart voor lunch en avondeten (de Heksensaté is vermaard!).<br><br>
+Verder is de Heksenketel de thuishaven van Party Service "ANCA", die garant staat voor een complete catering van feesten en partijen. Ook verhuur van tafels, biertapjes, barbecues, etc. is mogelijk.
+Voor meer informatie over onze Party Service verwijzen wij u door naar onze website: http://www.ancapartyservice.nl/
             </p>
           </div>
         </div>
@@ -172,7 +165,12 @@
         <hr class="rounded" />
         <h1 class="aboutundertitle">Onze contactgegevens</h1>
         <div class="row">
-          <div class="col-sm"></div>
+          <div class="col-sm">
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2630.375554874354!2d5.963972787477913!3d52.15900427671479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7b91af4f65337%3A0x6e9786d2ec062bbb!2sDe%20Heksenketel!5e0!3m2!1snl!2snl!4v1615634953084!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+          </div>
           <div class="col-sm"></div>
         </div>
       </div>
@@ -185,12 +183,12 @@
             <div class="col-sm-6 col-md-3 item">
               <h3 class="hekslettertype">Menu</h3>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Wie zijn wij</a></li>
-                <li><a href="#">Menukaart</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Wie zijn wij</a></li>
+                <li><a href="#menukaart">Menukaart</a></li>
                 <li><a href="#">Geschiedenis</a></li>
-                <li><a href="#">Evenementen</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#evenementen">Evenementen</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">
@@ -204,10 +202,7 @@
             <div class="col-md-6 item text">
               <h3 class="hekslettertype">Café de Heksenketel</h3>
               <p>
-                Praesent sed lobortis mi. Suspendisse vel placerat ligula.
-                Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis
-                tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel
-                in justo.
+                De Heksenketel is een café middenin de Dorpstraat in Beekbergen. Het café is alle dagen van het jaar geopend van 's morgens 11 t/m 1 uur 's nachts en in het weekend t/m 2 uur 's nachts. Wij hebben een groot terras aan de kant van de Dorpstraat en in de directe omgeving is een fraaie parkeerplaats.
               </p>
             </div>
             <div class="col item social">
@@ -232,5 +227,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+></script>
   </body>
 </html>

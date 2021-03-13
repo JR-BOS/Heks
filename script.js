@@ -26,7 +26,7 @@ $(document).ready(function () {
       "-=0.7"
     );
 
-  $(".navbar-nav>li>a").on("click", function () {
+  $(".navbar-collapse a").click(function () {
     $(".navbar-collapse").collapse("hide");
   });
 });
