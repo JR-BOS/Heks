@@ -36,10 +36,10 @@ body {
   right: 0;
   bottom: 0;
   background-color: rgba(
-    255,
-    255,
-    255,
-    0.85
+    243,
+    239,
+    232,
+    0.9
   ); /* Black background with opacity */
   z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
@@ -58,7 +58,11 @@ footer {
 
 .socialicon {
   padding: 5px;
-  color: #111;
+  color: grey;
+}
+
+.socialicon:hover {
+  color: black;
 }
 
 .home {
