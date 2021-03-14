@@ -50,6 +50,20 @@ body {
   width: 100%;
   padding: 0px 50px;
   z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  padding: 0px 50px;
+}
+
+.navbar.sticky .navbar-brand img {
+  width: 65px;
+  transition: all 0.3s ease;
 }
 
 footer {
@@ -67,10 +81,12 @@ footer {
 
 .home {
   display: flex;
+  position: relative;
   height: 100vh;
   justify-content: center;
   align-items: center;
   background: white;
+  z-index: 3;
 }
 
 .home-content {
@@ -162,7 +178,7 @@ footer {
 .abouttitle {
   text-align: center;
   font-family: "Dancing Script", cursive;
-  padding-top: 150px;
+  padding-top: 130px;
   padding-bottom: 10px;
   font-size: 40px;
 }

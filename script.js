@@ -2,6 +2,14 @@ $(document).ready(function () {
   $(".navbar-nav>li>a").on("click", function () {
     $(".navbar-collapse").collapse("hide");
   });
+
+  $(window).scroll(function () {
+    if (this.scrollY > 20) {
+      $(".navbar").addClass("sticky");
+    } else {
+      $(".navbar").removeClass("sticky");
+    }
+  });
   // const home_content = document.querySelector(".home-content");
   // const menu = document.querySelector(".navbarcontent");
 
