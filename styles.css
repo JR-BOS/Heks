@@ -180,7 +180,7 @@ footer {
   font-family: "Dancing Script", cursive;
   padding-top: 130px;
   padding-bottom: 10px;
-  font-size: 40px;
+  font-size: 42px;
 }
 
 .aboutundertitle {
@@ -195,10 +195,11 @@ footer {
 .about #ex1-tab-1,
 .about #ex1-tab-2 {
   background-color: transparent;
-  font-family: "Poppins", sans-serif;
+  font-family: "Dancing Script", cursive;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   text-transform: none;
+  margin-bottom: 50px;
 }
 
 .about .nav-tabs {
@@ -206,7 +207,7 @@ footer {
 }
 
 .about .nav-item .active {
-  color: crimson !important;
+  color: rgb(58, 56, 56) !important;
   border-bottom: 2px solid crimson !important;
 }
 
