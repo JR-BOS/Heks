@@ -26,6 +26,7 @@ body {
 .contact {
   z-index: 2;
   position: relative;
+  padding-bottom: 100px;
 }
 
 #overlay {
@@ -391,6 +392,7 @@ footer {
 .textcontent {
   padding-right: 5px;
   padding-left: 5px;
+  text-align: justify;
 }
 
 .homebutton a {
@@ -402,4 +404,38 @@ footer {
 
 .homebutton a:hover {
   color: crimson;
+}
+
+.partyservice img {
+  width: 90%;
+}
+
+.etendrinkentitel {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding-bottom: 10px;
+  font-size: 36px;
+  text-align: left;
+}
+
+.etendrinkentitelcenter {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding-bottom: 10px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.ruimte {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.rechtsplaatje {
+  text-align: right;
+}
+
+.partyservice img,
+.about img {
+  border-radius: 8px;
 }
