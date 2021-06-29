@@ -1,0 +1,2 @@
+
+Bootstrapper._serverTime = '2021-06-29 15:37:48'; Bootstrapper._clientIP = '0.0.0.0'; Bootstrapper.insertPageFiles(['https://nexus.ensighten.com/heineken/mijnzaak_prod/code/75ca78a546fccd35e53b6a08fccee626.js?conditionId0=4825502']);Bootstrapper.setPageSpecificDataDefinitionIds([64016,65056,65057,65058,65060,65055]);
