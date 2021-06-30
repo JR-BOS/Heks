@@ -120,6 +120,8 @@ footer {
   color: white;
   z-index: 3;
   font-family: "Dancing Script", cursive;
+  width: 100%;
+  text-align: center;
 }
 
 .headline2 {
@@ -131,6 +133,19 @@ footer {
   color: white;
   z-index: 3;
   font-family: "Dancing Script", cursive;
+}
+
+.headline3 {
+  position: absolute;
+  top: 40% !important;
+  left: 50% !important;
+  font-size: 60px;
+  transform: translate(-50%, -50%) !important;
+  color: white;
+  z-index: 3;
+  font-family: "Dancing Script", cursive;
+  width: 100%;
+  text-align: center;
 }
 
 .homebutton {
@@ -215,7 +230,7 @@ footer {
   border-top: 4px solid crimson;
   border-radius: 5px;
   opacity: 1;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 
 /* CONTACT SECTION */
@@ -307,13 +322,6 @@ footer {
   opacity: 0.8;
 }
 
-@media (max-width: 767px) {
-  .footer-dark .item:not(.social) {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-}
-
 .footer-dark .item.text {
   margin-bottom: 36px;
 }
@@ -337,6 +345,59 @@ footer {
   .footer-dark .item.social {
     text-align: center;
     margin-top: 20px;
+  }
+
+  .footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+    margin-left: 50px;
+  }
+
+  .footer-dark .textheader {
+    margin-left: 50px;
+  }
+  .footer-dark .item.text .marginonder {
+    margin-bottom: 50px;
+  }
+
+  .marginboven {
+    margin-top: 50px !important;
+  }
+
+  .marginonder {
+    margin-bottom: 50px !important;
+  }
+
+  .partyservice,
+  .rechtsplaatje,
+  .evenementen {
+    text-align: center !important;
+  }
+
+  .contact iframe {
+    margin-top: 50px;
+  }
+
+  .evenement {
+    margin-top: 50px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .footer-dark .textheader {
+    margin-left: 0px;
+  }
+
+  .footer-dark .item.text p {
+    margin-left: 0px;
+  }
+  .footer-dark .item.text .marginonder {
+    margin-bottom: 0px;
   }
 }
 
@@ -372,20 +433,29 @@ footer {
 }
 
 @media only screen and (max-width: 520px) {
-  .headline2 {
+  .headline3 {
+    font-size: 40px;
+  }
+
+  .abouttitle {
     font-size: 30px;
   }
 
+  .rounded {
+    margin: auto;
+    max-width: 150px;
+    border-top: 2px solid crimson;
+    border-radius: 5px;
+    opacity: 1;
+    margin-bottom: 25px;
+  }
+
   .headline {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .navbar-brand img {
     width: 90px;
-  }
-
-  .evenement {
-    margin-top: 40px !important;
   }
 }
 
@@ -427,8 +497,8 @@ footer {
 }
 
 .ruimte {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .rechtsplaatje {
@@ -438,4 +508,8 @@ footer {
 .partyservice img,
 .about img {
   border-radius: 8px;
+}
+
+.subtitel {
+  font-size: 28px;
 }
