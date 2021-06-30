@@ -7,24 +7,16 @@ $(document).ready(function () {
     }
   });
 
-  // const menu = document.querySelector(".navbarcontent");
+  // NAVBAR CLOSE ON CLICK
+  const toggler = document.querySelector(".navbar-toggler");
+  const collapse = document.querySelector(".navbar-collapse");
 
-  // const headline = document.querySelector(".headline");
-  // const headline2 = document.querySelector(".headline2");
-  // const homebutton = document.querySelector(".test");
+  collapse.addEventListener("click", (e) => {
+    const isCollapsed = document.querySelector(".navbar-collapse.show");
+    const tagName = e.target.tagName;
 
-  // const timeLine = gsap.timeline();
-  // timeLine
-
-  //   .fromTo(menu, 0.7, { opacity: 0 }, { opacity: 1 })
-  //   .fromTo(headline, 0.7, { opacity: 0, x: 0 }, { opacity: 1, x: 0 }, "-=0.7")
-  //   .fromTo(headline2, 0.7, { opacity: 0, x: 0 }, { opacity: 1, x: 0 }, "-=0.7")
-
-  //   .fromTo(
-  //     homebutton,
-  //     0.7,
-  //     { opacity: 0, x: 0 },
-  //     { opacity: 1, x: 0 },
-  //     "-=0.7"
-  //   );
+    if (isCollapsed && (tagName === "A" || tagName === "BUTTON")) {
+      toggler.click();
+    }
+  });
 });
