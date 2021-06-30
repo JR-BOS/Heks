@@ -8,7 +8,7 @@ $(document).ready(function () {
   });
 
   $(".customer-logos").slick({
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
@@ -17,9 +17,9 @@ $(document).ready(function () {
     pauseOnHover: false,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 991,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
         },
       },
       {
