@@ -44,3 +44,51 @@ $(document).ready(function () {
     }
   });
 });
+
+var now = new Date();
+var weekday = new Array(7);
+weekday[0] = "Zondag";
+weekday[1] = "Maandag";
+weekday[2] = "Dinsdag";
+weekday[3] = "Woensdag";
+weekday[4] = "Donderdag";
+weekday[5] = "Vrijdag";
+weekday[6] = "Zaterdag";
+
+var checkTime = function () {
+  var today = weekday[now.getDay()];
+  var timeDiv = document.getElementById("timeDiv");
+  var dayOfWeek = now.getDay();
+  var hour = now.getHours();
+  var minutes = now.getMinutes();
+
+  // add 0 to one digit minutes
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+
+  if (
+    ((dayOfWeek == 0 ||
+      dayOfWeek == 1 ||
+      dayOfWeek == 2 ||
+      dayOfWeek == 3 ||
+      dayOfWeek == 4 ||
+      dayOfWeek == 5 ||
+      dayOfWeek == 6 ||
+      dayOfWeek == 7) &&
+      hour >= 11) ||
+    hour == 00 ||
+    hour == 01
+  ) {
+    timeDiv.innerHTML =
+      "Het is " + today + " " + hour + ":" + minutes + " - We zijn geopend!";
+    timeDiv.className = "open";
+  } else {
+    timeDiv.innerHTML =
+      "Het is " + today + " " + hour + ":" + minutes + " - We zijn gesloten!";
+    timeDiv.className = "closed";
+  }
+};
+
+setInterval(checkTime, 1000);
+checkTime();
